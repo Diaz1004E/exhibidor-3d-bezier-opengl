@@ -84,13 +84,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\PERSONAL\OneDrive\Desktop\semestre 2-2026\computacion grafica\triangles 3D\opengl\libraries\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\PERSONAL\OneDrive\Desktop\semestre 2-2026\computacion grafica\proyecto 3D\opengl\libraries\include;$(ProjectDir)libraries\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\PERSONAL\OneDrive\Desktop\semestre 2-2026\computacion grafica\triangles 3D\opengl\libraries\lib;C:\Users\PERSONAL\OneDrive\Desktop\Nueva carpeta\opengl\libraries\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\PERSONAL\OneDrive\Desktop\semestre 2-2026\computacion grafica\proyecto 3D\opengl\libraries\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -113,13 +113,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\PERSONAL\OneDrive\Desktop\semestre 2-2026\computacion grafica\triangles 3D\opengl\libraries\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\PERSONAL\OneDrive\Desktop\semestre 2-2026\computacion grafica\proyecto 3D\opengl\libraries\include;$(ProjectDir)libraries\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\PERSONAL\OneDrive\Desktop\semestre 2-2026\computacion grafica\triangles 3D\opengl\libraries\lib;C:\Users\PERSONAL\OneDrive\Desktop\Nueva carpeta\opengl\libraries\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\PERSONAL\OneDrive\Desktop\semestre 2-2026\computacion grafica\proyecto 3D\opengl\libraries\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -138,6 +138,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="glad.c" />
+    <ClCompile Include="libraries\imgui\backends\imgui_impl_glfw.cpp" />
+    <ClCompile Include="libraries\imgui\backends\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="libraries\imgui\imgui.cpp" />
+    <ClCompile Include="libraries\imgui\imgui_draw.cpp" />
+    <ClCompile Include="libraries\imgui\imgui_tables.cpp" />
+    <ClCompile Include="libraries\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="libraries\tiny_gltf_v3.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="origin.cpp" />
   </ItemGroup>
